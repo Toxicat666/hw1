@@ -1,0 +1,16 @@
+function setup() { 
+  createCanvas(400, 400);
+}
+
+function draw() { 
+	background(255);
+	
+	var x,y;
+  x = 100
+  y = 100
+	
+	stroke(100);
+	ellipse(x,y,50,50);
+	
+x= x+1;
+	}
