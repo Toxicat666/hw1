@@ -10,16 +10,18 @@ function draw() {
      faceWidth = 100,
      faceHeight = 100;
   ellipse(faceX, faceY, faceWidth, faceHeight);
-ellipse(faceX-25, faceY-25,25, 25);
-  ellipse(faceX+25, faceY-25,25,25);
+ellipse(faceX-20, faceY-10,15, 15);
+  ellipse(faceX+20, faceY-10,15,15);
   
-  var h = map(mouseX,0,200,15,0);
   
-  print(mouseX,"->",h);z
+  
+
 	
-	if(mouseX >200){
-	arc(mouseX, mouseY, 50, 50, 0, PI, OPEN);
+	if(mouseX >width/2){
+		var h = map(mouseX,200,400,0,15);
+	arc(mouseX, mouseY+20, 40, h, 0, PI, OPEN);
 }else{
-arc(mouseX,mouseY+20,50,50,PI,0,OPEN);
+	var h = map(mouseX,0,200,15,0);
+arc(mouseX,mouseY+20,40,h,PI,0,OPEN);
 }
 }
