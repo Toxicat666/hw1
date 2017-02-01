@@ -1,0 +1,15 @@
+var x = 100;
+var y = 100;
+var spd = 3;
+function setup(){
+createCanvas(400,400);
+}
+function draw(){
+background(220);
+
+x=x+spd;
+ellipse(x,y,50,50);
+if (x > width|| x<=0){
+spd= spd*-1;
+}
+}
