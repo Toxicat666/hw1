@@ -3,16 +3,16 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  //background(255);
   
-  var faceX = mouseX,
-      faceY = mouseY,
-     faceWidth = 100,
-     faceHeight = 100;
-  ellipse(faceX, faceY, faceWidth, faceHeight);
-
-  ellipse(faceX-25, faceY-25,
-       25, 25);
-  ellipse(faceX+25, faceY-25,25,25);
-	arc(faceX, faceY, 50, 50, 0, PI, OPEN);
+  var x=200,
+      y=200;
+			
+    fill(255);
+	stroke(0);
+	
+  ellipse(mouseX, mouseY, 100, 100);
+  ellipse(mouseX-25, mouseY-25,25, 25);
+  ellipse(mouseX+25, mouseY-25,25,25);
+	arc(mouseX, mouseY, 50, 50, 0, PI, OPEN);
 }
