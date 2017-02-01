@@ -1,16 +1,21 @@
-function setup() { 
-  createCanvas(400, 400);
+var speed = 5;
+var left = -5;
+var posX = 0;
+var posY = 200;
+
+function setup(){
+	createCanvas(400,400);
 }
 
-function draw() { 
+function draw(){
 	background(255);
+	ellipse(posX,posY,50,50);
 	
-	var x,y;
-  x = 100
-  y = 100
-	
-	stroke(100);
-	ellipse(x,y,50,50);
-	
-x= x+1;
+	if(posX>380){
+		speed=speed-5;
 	}
+	if(posX<20){
+		speed=speed+5;
+	}
+	posX=posX+speed;
+}
